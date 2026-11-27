@@ -10,12 +10,14 @@
 #                 read-only catalog, the session report, the
 #                 sign-in routes, the feedback-door redirect.
 #   leg 2 (write) installs only when ~/nova-fox-wiki/oauth.env
-#                 carries a filled GITHUB_CLIENT_ID: before the
-#                 instance has a sign-in provider it is not
-#                 locked, and its editor routes must stay
-#                 unproxied. Fill the two GitHub lines (callback:
-#                 https://fox.phext.io/api/auth/github/callback),
-#                 then re-run this script — it is idempotent.
+#                 carries the phext.tech SSO configuration (the
+#                 audience line and the shared SSO secret): the
+#                 wiki signs in as an SSO consumer, and before
+#                 that configuration lands the instance is not
+#                 locked, so its editor routes must stay
+#                 unproxied. The RUNBOOK's step 2 lands both
+#                 halves; then re-run this script — it is
+#                 idempotent.
 #
 # `nginx -t` gates every reload; a failed test rolls the vhost
 # back from the patch script's backup automatically.
@@ -53,7 +55,7 @@ say "leg 1 (read) live: https://$SITE/wiki/"
 
 # --- leg 2: the write side, once sign-in is configured.
 LEG2=held
-if grep -q '^GITHUB_CLIENT_ID=.\+' "$WIKI/oauth.env"; then
+if grep -q '^PHEXT_SSO_AUDIENCE=.\+' "$WIKI/oauth.env" && grep -q '^PHEXT_SSO_SECRET=.\+' "$WIKI/oauth.env"; then
   systemctl --user restart nova-fox-wiki.service
   sleep 2
   sudo python3 "$LAUNCH/patch-fox-vhost.py" leg2 || die "leg2 patch failed"
@@ -62,9 +64,9 @@ if grep -q '^GITHUB_CLIENT_ID=.\+' "$WIKI/oauth.env"; then
   LEG2=live
   say "leg 2 (write) live — sign-in configured, editor routes proxied"
 else
-  say "leg 2 (write) HELD: GITHUB_CLIENT_ID is empty in $WIKI/oauth.env"
-  say "  1. create a GitHub OAuth app — callback: https://$SITE/api/auth/github/callback"
-  say "  2. fill GITHUB_CLIENT_ID / GITHUB_CLIENT_SECRET in $WIKI/oauth.env"
+  say "leg 2 (write) HELD: phext.tech SSO is not fully configured in $WIKI/oauth.env"
+  say "  1. run the RUNBOOK step 2 block (provider audience + secret handoff)"
+  say "  2. PHEXT_SSO_AUDIENCE and PHEXT_SSO_SECRET must both be set in $WIKI/oauth.env"
   say "  3. re-run this script"
 fi
 
