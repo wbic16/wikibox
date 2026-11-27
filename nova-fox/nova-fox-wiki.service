@@ -1,0 +1,16 @@
+[Unit]
+Description=Nova Fox wiki — Wikibox (phext-edit) at fox.phext.io/wiki
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/wbic16/nova-fox-wiki
+EnvironmentFile=-/home/wbic16/nova-fox-wiki/oauth.env
+ExecStart=/home/wbic16/nova-fox-wiki/bin/phext-edit --dir /home/wbic16/nova-fox-wiki/data --home wiki.phext --home-coord 1.1.1/1.1.1/1.1.1 --host 127.0.0.1 --port 8082
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
