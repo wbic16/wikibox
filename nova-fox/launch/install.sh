@@ -73,7 +73,7 @@ fi
 # --- smoke checks.
 say "smoke checks:"
 code=$(curl -s -o /tmp/wiki-smoke.html -w '%{http_code}' --max-time 10 "https://$SITE/wiki/")
-grep -qi "Nova Fox" /tmp/wiki-smoke.html && TITLE=ok || TITLE=MISSING
+curl -s --max-time 10 "https://$SITE/api/wiki/nav?c=1.1.1/1.1.1/1.1.1" | grep -qi "Nova Fox" && TITLE=ok || TITLE=MISSING
 echo "  https://$SITE/wiki/        -> $code (shell: $TITLE)"
 stat=$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 "https://$SITE/api/wiki/status")
 echo "  /api/wiki/status            -> $stat (want 200)"
