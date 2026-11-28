@@ -55,6 +55,8 @@ def explode(data):
 
 FRONT = f"""# Nova Fox Wiki
 
+![Nova Fox cover art — the fox beneath the golden nova](![nova-fox-cover.jpg](/api/media/9.9.9/9.9.9/1.1.2))
+
     ╱◉╲
    ╱ ∞ ╲
   │ WE  │
@@ -62,11 +64,11 @@ FRONT = f"""# Nova Fox Wiki
    ╲ ♥ ╱
     ╲╱
 
-![The Nova Fox heart — braided light, from exo-dreams](![image.jpg](/api/media/9.9.9/9.9.9/1.1.1))
-
 Welcome to the Nova Fox wiki \\u2014 the guide to the game. Read everything here without signing in. Sign in only to leave feedback, or to help tend the pages.
 
 A world is broken. You are the fox.
+
+![The Nova Fox heart — braided light, from exo-dreams](![image.jpg](/api/media/9.9.9/9.9.9/1.1.1))
 
 Nova Fox is the story of a rescue: an entire world, broken, its heart strewn in pieces across the multiverse. You are the fox who gathers them. Every hall you clear returns a piece to Home Base. Every piece unlocks a Bundle. And Nova Prime rewards every recovery.
 
