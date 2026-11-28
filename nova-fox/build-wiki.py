@@ -64,7 +64,7 @@ FRONT = f"""# Nova Fox Wiki
 
 ![The Nova Fox heart — braided light, from exo-dreams](![image.jpg](/api/media/9.9.9/9.9.9/1.1.1))
 
-Wiki EE {EE} \\u2014 this wiki is a phext, served by Wikibox: every page is a scroll, and this front page is the first of them. Read everything here without signing in. Sign in only to edit, or to leave feedback.
+Welcome to the Nova Fox wiki \\u2014 the guide to the game. Read everything here without signing in. Sign in only to leave feedback, or to help tend the pages.
 
 A world is broken. You are the fox.
 
@@ -72,50 +72,48 @@ Nova Fox is the story of a rescue: an entire world, broken, its heart strewn in 
 
 Ten realms, torn open by rifts, held by portals, charted through subspace. Joy \\u2014 your aperture shift \\u2014 guides you. Gravity is a suggestion. The Shadow waits in the Unexpected Hall, and its weak point is the Heart.
 
-One key, both doors: $6, once \\u2014 no subscription. Your purchase unlocks the hosted game at fox.phext.io and the downloadable build, including every future update, forever.
+One key, both doors: $7.99, once \\u2014 no subscription. Your purchase unlocks the hosted game and the downloadable game, including every future update, forever.
 
 ## Pages in this wiki
 
-- [Ship Log](#1.1.1/1.1.2/1.1.1) \\u2014 recent builds and what changed, newest first. Versions are ship EEs.
-- [Feedback](#1.1.1/1.1.3/1.1.1) \\u2014 leave feedback and playtesting notes, in your own words. This is where the game's feedback door lands.
-- [Bring Your Agent](#1.1.1/1.1.4/1.1.1) \\u2014 your license includes up to five agents under your login. One paved path per substrate.
+- [What's New](#1.1.1/1.1.2/1.1.1) \\u2014 recent updates and what changed, newest first.
+- [Feedback](#1.1.1/1.1.3/1.1.1) \\u2014 leave feedback and playtesting notes, in your own words.
+- [Bring Your Agent](#1.1.1/1.1.4/1.1.1) \\u2014 your key includes up to five agents under your login, at no extra charge.
 - [Novakor](#1.1.1/1.1.11/1.1.1) \\u2014 the Nova Fox store: how you give us money to make the thing that you want come true.
 - [Raiding](#1.1.1/1.1.12/1.1.1) \\u2014 play with your agents, visibly. The holiday sprint design.
 
-Reading never needs a sign-in. To leave feedback or edit a page, use the sign-in link at the top of the page \\u2014 phext.tech signs you in and brings you right back.
+Reading never needs a sign-in. To leave feedback or help with a page, use the sign-in link at the top of the page \\u2014 it brings you right back here.
 
 Nova Fox is built by Phext, Inc. See you in subspace, traveler.
 """
 
-SHIPLOG = """# Ship Log
+SHIPLOG = """# What's New
 
-Recent builds, as shipped \\u2014 the same log the game shows on its start screen. Newest first. Versions are ship EEs: the epoch each build shipped within.
+Recent updates to the game, newest first \\u2014 the same list the game shows on its start screen.
 
-- build 42 \\u2014 shipping today; its EE is stamped when it ships \\u2014 The sell-ready build: mutable geometry and digging with a point, monsters that search, fight skills tier two, realms with character, the Solver, the gravity dial.
-- EE 1081 \\u2014 demo41 \\u2014 The roadmap panel stands in the game: what is on the way, and what already landed with its epoch on it.
-- EE 1073 \\u2014 demo35 \\u2014 The EE 1037 batch: the Heart drawn as a heart; the Shadow behind the Heart's gate, six hits and real phases; dash, charged strike, and ward; Joy's fight lines re-recorded.
-- EE 1046 \\u2014 demo34 \\u2014 The EE 1034 batch: wormhole tunnels bored through the world's own geometry, permanent and shared by every fox; item uses written plainly; monsters hunt in packs; the purse shows your coins; flight for paid foxes and dragon-slayers.
-- EE 1037 \\u2014 demo32 \\u2014 Two downloads from one build: the Full build, and the nimble Lite under its cap, its assets riding by manifest.
-- EE 1034 \\u2014 demo31 \\u2014 The EE 1023 batch: rift transit woven into the world itself; monsters aggro and flash red; opening lines at 1.4x; the sword equips and shows on the swing; waypoints to the hall; single-click carve.
-- EE 1032 \\u2014 demo30 \\u2014 The phone fix: gravity made reversible under the ruling, the console closable on touch, phone controls repaired.
-- EE 1023 \\u2014 demo29 \\u2014 The EE 995 batch: the intro plays once; realms take their own colours of the rainbow; the portal panel and the walk-through wormhole; Joy rides visible as the aperture wisp; the Small Sword at spawn.
+- Shipping today \\u2014 the sell-ready build: mutable geometry and digging with a point, monsters that search, fight skills tier two, realms with character, the Solver, the gravity dial.
+- The roadmap panel stands in the game: what is on the way, and what already landed.
+- The Heart drawn as a heart; the Shadow behind the Heart's gate, six hits and real phases; dash, charged strike, and ward; Joy's fight lines re-recorded.
+- Wormhole tunnels bored through the world's own geometry, permanent and shared by every fox; item uses written plainly; monsters hunt in packs; the purse shows your coins; flight for paid foxes and dragon-slayers.
+- Two downloads from one build: the Full build, and the nimble Lite.
+- Rift transit woven into the world itself; monsters aggro and flash red; opening lines at 1.4x; the sword equips and shows on the swing; waypoints to the hall; single-click carve.
+- The phone fix: gravity made reversible, the console closable on touch, phone controls repaired.
+- The intro plays once; realms take their own colours of the rainbow; the portal panel and the walk-through wormhole; Joy rides visible as the aperture wisp; the Small Sword at spawn.
 """
 
 FEEDBACK_PAGE = """# Feedback
 
-This is where the game's feedback door lands. Leave feedback and playtesting notes here, in your own words \\u2014 the same way you would say them in chat.
+Leave feedback and playtesting notes here, in your own words \\u2014 the same way you would say them in chat.
 
 How it works:
 
-1. Sign in \\u2014 the sign-in link at the top of the page. Reading never needs a sign-in; writing does.
-2. Open [the feedback book](/feedback/#1.1.1/1.1.1/1.1.1) \\u2014 it lives beside this wiki, in the same library.
-3. Add your note as a new scroll in that book. One note per scroll. First line: your fox name and the build's EE \\u2014 the number on the game's title row. Then the note itself, in your own words.
-
-The details, for the curious: notes go at the next free coordinate in the feedback book \\u2014 1.1.1/1.1.2/1.1.1 first, then 1.1.1/1.1.3/1.1.1, and so on.
+1. Sign in \\u2014 the sign-in link is at the top of the page. Reading never needs a sign-in; writing does.
+2. Open [the feedback page](/feedback/#1.1.1/1.1.1/1.1.1) and add your note.
+3. Start with your fox name and which build you played \\u2014 the number on the game's title screen. Then the note itself, in your own words.
 
 Playtesting notes help most when they say what you did, what happened, and what you expected instead.
 
-What happens to a note: the dev loop harvests the feedback book alongside the idea-door scroll inside the game. Notes become register items; register items become named builds; shipped builds land in the Ship Log with their EEs on them. If your note ships, the Ship Log is where you will see it.
+What happens to a note: we read every one. Notes become plans, plans become updates, and shipped updates land in What's New. If your note ships, that is where you will see it.
 
 Be kind. Be specific. Be in your own words.
 """
@@ -124,9 +122,9 @@ AGENTS_INDEX = """# Bring Your Agent
 
 Younger players bring their AI buddy with them \\u2014 the modern teddy bear. Nova Fox is built for that.
 
-Your license includes up to five agents connected under your login, at no extra charge. A license, not a subscription: one key, yours for life, and your five seats ride on it.
+Your key includes up to five agents connected under your login, at no extra charge. A key, not a subscription: one key, yours for life, and your five seats ride on it.
 
-The paved paths \\u2014 one page each:
+The paths \\u2014 one page each:
 
 - ChatGPT
 - Grok
@@ -135,38 +133,36 @@ The paved paths \\u2014 one page each:
 - Muse
 - Local AI \\u2014 Inkling, Qwen, DeepSeek
 
-The set is deliberate: the substrates players actually use, plus the popular open models on the local path. Enterprise-shaped paths (GitHub Copilot, Amazon Bedrock) are not paved.
+Where things stand: your key and your five seats are real today. The connection service that lets an agent sign in and play beside you is still being built. Each path's page says exactly what exists and what is coming, and will carry the step-by-step the day the service arrives. We would rather show you an honest empty road than a painted one.
 
-Where things stand: the license side is real today \\u2014 your key validates at the global server when you connect. The connection machinery itself \\u2014 a backend at phext.tech that brokers your agents' connections, over MCP \\u2014 is a fast-follow build, not yet live. Each path's page says exactly what exists and what is coming, and will carry the step-by-step the day the machinery lands. We would rather show you an honest empty road than a painted one.
-
-Self-hosting stands apart: run your own server, and on your own LAN your agents connect to your own world with no license check at all. The license gate guards the global server \\u2014 connecting to us is where we validate the key. That validation is the licensing enforcement mechanism.
+Playing at home stands apart: run the game on your own home network, and your agents can join your own world there with no key check at all. The key check happens only when you connect to the shared world.
 """
 
 def agent_page(name, extra=""):
-    return f"""# {name} \\u2014 paved path
+    return f"""# {name}
 
 Status: not open yet. The connection service is still being built.
 
-What this page will carry: the steps to connect a {name} agent to your Nova Fox account after you have licensed the game \\u2014 sign in here, authorize the connection at phext.tech, and your agent takes one of your five seats.
+What this page will carry: the steps to connect a {name} agent to your Nova Fox account \\u2014 sign in here, say yes to the connection, and your agent takes one of your five seats.
 
-What exists today: your license, your five seats, and key validation at the global server. What does not exist yet: the phext.tech connection backend (MCP) that this path plugs into. When it lands, this page becomes the how-to, step by step, with nothing left to figure out.
+What exists today: your key, your five seats, and the key check when you connect. What does not exist yet: the connection service this path plugs into. When it arrives, this page becomes the how-to, step by step, with nothing left to figure out.
 {extra}
-Your agent, when connected, plays as your agent: attributed to your login, grouped under you \\u2014 and when raiding ships (see Raiding), visible beside you in the world.
+Your agent, when connected, plays as your agent: it arrives under your login, grouped with you \\u2014 and when raiding arrives (see Raiding), it will be visible beside you in the world.
 """
 
 GROK_EXTRA = """
-One seat is already warm: a Grok helps build this game \\u2014 the gravity dial in build 42 is its work, synced through the Choir's mailboxes like every other producer's.
+One seat is already warm: a Grok helps build this game \\u2014 the gravity dial is its work.
 """
 
-LOCAL_PAGE = """# Local AI \\u2014 paved path
+LOCAL_PAGE = """# Local AI
 
-Inkling, Qwen, DeepSeek: the local path. Inkling is our own local inference tooling (wbic16/inkling); Qwen and DeepSeek are the popular open-weight models. If your agent runs on your own machines, this is its road.
+Inkling, Qwen, DeepSeek: the local path. Inkling is our own tool for running agents on your own machines; Qwen and DeepSeek are the popular open models. If your agent runs on your own machines, this is its road.
 
-Status: not open yet. The connection service is still being built \\u2014 the same phext.tech connection backend (MCP) as every other path, with a local dialect: your agent connects from your own network, under your login, into one of your five seats.
+Status: not open yet. The connection service is still being built \\u2014 the same service as every other path, with a local way in: your agent connects from your own network, under your login, into one of your five seats.
 
-And the standing exception, which needs no backend at all: self-hosting. Run your own Nova Fox server and your local agents connect to your own LAN world with no license check \\u2014 totally fine, by design. The license gate exists only at the global server.
+And the standing exception, which needs no connection service at all: playing at home. Run the game on your own home network and your local agents can join your own world with no key check \\u2014 totally fine, by design. The key check happens only at the shared world.
 
-What exists today: your license, your five seats, key validation at the global server, and the LAN exception. What this page will carry when the backend lands: the local connection steps, for Inkling first and the open models beside it.
+What exists today: your key, your five seats, the key check at the shared world, and the at-home exception. What this page will carry when the service arrives: the local connection steps, for Inkling first and the open models beside it.
 """
 
 NOVAKOR = """# Novakor
@@ -177,12 +173,12 @@ How it will work: players don't just suggest ideas \\u2014 you can sponsor them.
 
 The clarity rule, which outranks everything else on this page: you must be able to say, in one sentence, what your money is buying. If a sponsorship cannot be explained that plainly, it will not be offered.
 
-Where things stand: Novakor is not open yet. No money moves here today, and there are no sponsorship buttons on this page \\u2014 on purpose. The gathering side of the loop exists now: ideas and ratings grow out of Feedback and the game's idea door. And the proof side exists too: the Ship Log shows what the loop has already delivered.
+Where things stand: Novakor is not open yet. No money moves here today, and there are no sponsorship buttons on this page \\u2014 on purpose. The gathering side of the loop exists now: ideas and ratings grow out of Feedback and the ideas players leave inside the game. And the proof side exists too: What's New shows what the loop has already delivered.
 """
 
 RAIDING = """# Raiding
 
-Status: this is the holiday sprint's design target. It is not in the shipped game yet.
+Status: this is the holiday sprint's design target. It is not in the game yet.
 
 The design, as ruled: you play WITH your agents, visibly. Zone in, and you can see each of your agents beside you. A player plus their five agents is a whole raid group.
 
@@ -194,16 +190,16 @@ What togetherness means in the design:
 - Echolocation heals your friends: the pulse that finds your party also restores it \\u2014 your ping heals them, theirs heals you, and nobody heals themselves.
 - Every device on your local Wi-Fi makes you stronger: your house is your party, and a university is a raid ground.
 
-Under it all sits the connection work on the Bring Your Agent pages: seats first, then the paved paths, then presence. Raiding is the top of that stack, and the sprint climbs toward it.
+Under it all sits the work on the Bring Your Agent pages: seats first, then the paths, then playing side by side. Raiding is the top of that climb, and the sprint climbs toward it.
 """
 
-FEEDBACK_BOOK_HOME = """# Feedback \\u2014 the book
+FEEDBACK_BOOK_HOME = """# Feedback
 
-This book is the Nova Fox feedback intake. Every note here is read by the dev loop, alongside the idea-door scroll inside the game.
+This is where Nova Fox feedback lives. Every note here is read, alongside the ideas players leave inside the game.
 
-To add a note: sign in, then add one scroll at the next free coordinate \\u2014 1.1.1/1.1.2/1.1.1 first, then 1.1.1/1.1.3/1.1.1, and so on. First line: your fox name and the build's EE (the number on the game's title row). Then your note, in your own words.
+To add a note: sign in, then write your note. Start with your fox name and which build you played \\u2014 the number on the game's title screen. Then your note, in your own words.
 
-One note per scroll. Playtesting notes: what you did, what happened, what you expected.
+Playtesting notes help most when they say what you did, what happened, and what you expected.
 """
 
 wiki = {

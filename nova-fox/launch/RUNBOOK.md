@@ -20,8 +20,8 @@ own `~/fox-phext-launch/` pattern.
 - Verified before staging: the full write path (image upload,
   page edit, book switch, a TEST feedback entry written and read
   back), and the public gates on a locked configuration (catalog
-  public + read-only, editor API 401 signed-out, dark shell,
-  EE stamp on the front page). Sign-in is phext.tech SSO
+  public + read-only, editor API 401 signed-out, dark shell).
+  Sign-in is phext.tech SSO
   (WIKI-2): the instance binary is phext-lattice@exo e620b64,
   whose consumer mode the hub gates exercised end to end —
   test-provider mint → consumer callback → sealed session →
@@ -67,8 +67,8 @@ own `~/fox-phext-launch/` pattern.
 
 - Reading is public: nginx proxies `/wiki/` and `/api/wiki/` to
   the instance; the catalog is built from wiki.phext and refuses
-  writes (405). The deployed front page carries the wiki's ship
-  EE on its face.
+  writes (405). The deployed book's version lives in the deploy
+  record, not on its pages (no-tech standard, below).
 - The game's feedback door points at
   `https://fox.phext.io/wiki/feedback`; the vhost redirects it
   (query preserved) to the wiki shell open at the Feedback
@@ -92,3 +92,4 @@ own `~/fox-phext-launch/` pattern.
   its editor routes stay loopback-only until then.
 - Content standard (Will, 2026-11-27): every page on this wiki is age appropriate for all audiences — no profanity or crude language, no sexual content, no graphic violence beyond the game's own cartoon register, and no gambling framing anywhere (Novakor sponsorship is funding for features, never wagering, bidding, or odds). Money pages are written plainly to the account holder.
 - UX standard (Will, 2026-11-27): the UI/UX is super simple — a newcomer lands, reads, and finds feedback and sign-in without learning the editor: few choices, plain words, the feedback door and sign-in unmissable from the front page.
+- No-tech standard (Will, 2026-11-27): a game wiki talks about the game, not the tech. Reader-facing pages carry no phext, scroll, coordinate, EE, SSO, dimension, or editor talk: sign-in is just "sign in," feedback is just "sign in, write your note," and the ship log is "What's New" in plain words. Version stamps and machinery live in the deploy record (this repo's history), never on the pages.
