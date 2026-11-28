@@ -62,6 +62,8 @@ FRONT = f"""# Nova Fox Wiki
    ╲ ♥ ╱
     ╲╱
 
+![The Nova Fox heart — braided light, from exo-dreams](![image.jpg](/api/media/9.9.9/9.9.9/1.1.1))
+
 Wiki EE {EE} \\u2014 this wiki is a phext, served by Wikibox: every page is a scroll, and this front page is the first of them. Read everything here without signing in. Sign in only to edit, or to leave feedback.
 
 A world is broken. You are the fox.
@@ -74,11 +76,13 @@ One key, both doors: $6, once \\u2014 no subscription. Your purchase unlocks the
 
 ## Pages in this wiki
 
-- Ship Log \\u2014 recent builds and what changed, newest first. Versions are ship EEs.
-- Feedback \\u2014 leave feedback and playtesting notes, in your own words. This is where the game's feedback door lands.
-- Bring Your Agent \\u2014 your license includes up to five agents under your login. One paved path per substrate.
-- Novakor \\u2014 the Nova Fox store: how you give us money to make the thing that you want come true.
-- Raiding \\u2014 play with your agents, visibly. The holiday sprint design.
+- [Ship Log](#1.1.1/1.1.2/1.1.1) \\u2014 recent builds and what changed, newest first. Versions are ship EEs.
+- [Feedback](#1.1.1/1.1.3/1.1.1) \\u2014 leave feedback and playtesting notes, in your own words. This is where the game's feedback door lands.
+- [Bring Your Agent](#1.1.1/1.1.4/1.1.1) \\u2014 your license includes up to five agents under your login. One paved path per substrate.
+- [Novakor](#1.1.1/1.1.11/1.1.1) \\u2014 the Nova Fox store: how you give us money to make the thing that you want come true.
+- [Raiding](#1.1.1/1.1.12/1.1.1) \\u2014 play with your agents, visibly. The holiday sprint design.
+
+Reading never needs a sign-in. To leave feedback or edit a page, use the sign-in link at the top of the page \\u2014 phext.tech signs you in and brings you right back.
 
 Nova Fox is built by Phext, Inc. See you in subspace, traveler.
 """
@@ -103,9 +107,11 @@ This is where the game's feedback door lands. Leave feedback and playtesting not
 
 How it works:
 
-1. Sign in. Reading never needs a sign-in; writing does.
-2. Open the feedback book \\u2014 feedback.phext, which lives beside this wiki in the same library.
-3. Add one scroll per note, at the next free coordinate: 1.1.1/1.1.2/1.1.1 first, then 1.1.1/1.1.3/1.1.1, and so on. First line: your fox name and the build's EE \\u2014 the number on the game's title row. Then the note itself.
+1. Sign in \\u2014 the sign-in link at the top of the page. Reading never needs a sign-in; writing does.
+2. Open [the feedback book](/feedback/#1.1.1/1.1.1/1.1.1) \\u2014 it lives beside this wiki, in the same library.
+3. Add your note as a new scroll in that book. One note per scroll. First line: your fox name and the build's EE \\u2014 the number on the game's title row. Then the note itself, in your own words.
+
+The details, for the curious: notes go at the next free coordinate in the feedback book \\u2014 1.1.1/1.1.2/1.1.1 first, then 1.1.1/1.1.3/1.1.1, and so on.
 
 Playtesting notes help most when they say what you did, what happened, and what you expected instead.
 
@@ -139,7 +145,7 @@ Self-hosting stands apart: run your own server, and on your own LAN your agents 
 def agent_page(name, extra=""):
     return f"""# {name} \\u2014 paved path
 
-Status: the road is surveyed; the pavement is a fast-follow.
+Status: not open yet. The connection service is still being built.
 
 What this page will carry: the steps to connect a {name} agent to your Nova Fox account after you have licensed the game \\u2014 sign in here, authorize the connection at phext.tech, and your agent takes one of your five seats.
 
@@ -156,7 +162,7 @@ LOCAL_PAGE = """# Local AI \\u2014 paved path
 
 Inkling, Qwen, DeepSeek: the local path. Inkling is our own local inference tooling (wbic16/inkling); Qwen and DeepSeek are the popular open-weight models. If your agent runs on your own machines, this is its road.
 
-Status: the road is surveyed; the pavement is a fast-follow \\u2014 the same phext.tech connection backend (MCP) as every other path, with a local dialect: your agent connects from your own network, under your login, into one of your five seats.
+Status: not open yet. The connection service is still being built \\u2014 the same phext.tech connection backend (MCP) as every other path, with a local dialect: your agent connects from your own network, under your login, into one of your five seats.
 
 And the standing exception, which needs no backend at all: self-hosting. Run your own Nova Fox server and your local agents connect to your own LAN world with no license check \\u2014 totally fine, by design. The license gate exists only at the global server.
 
@@ -167,7 +173,7 @@ NOVAKOR = """# Novakor
 
 Named for Sto-vo-kor. Novakor is how you give us money to make the thing that you want come true.
 
-How it will work: players don't just suggest ideas \\u2014 you can bid on them, and sponsor them. Sponsorship earns you cred with the community. You can fund a popular, highly rated idea, or your own. Money goes further when it is directed at a highly rated feature request: backing what the community already wants moves it more than the same money on a lone idea.
+How it will work: players don't just suggest ideas \\u2014 you can sponsor them. Sponsorship earns you cred with the community. You can fund a popular, highly rated idea, or your own. Money goes further when it is directed at a highly rated feature request: backing what the community already wants moves it more than the same money on a lone idea.
 
 The clarity rule, which outranks everything else on this page: you must be able to say, in one sentence, what your money is buying. If a sponsorship cannot be explained that plainly, it will not be offered.
 

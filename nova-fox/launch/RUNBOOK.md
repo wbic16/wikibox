@@ -90,3 +90,5 @@ own `~/fox-phext-launch/` pattern.
   once the SSO configuration (audience + shared secret) is in
   the instance's env. Without it, phext-edit runs unlocked, so
   its editor routes stay loopback-only until then.
+- Content standard (Will, 2026-11-27): every page on this wiki is age appropriate for all audiences — no profanity or crude language, no sexual content, no graphic violence beyond the game's own cartoon register, and no gambling framing anywhere (Novakor sponsorship is funding for features, never wagering, bidding, or odds). Money pages are written plainly to the account holder.
+- UX standard (Will, 2026-11-27): the UI/UX is super simple — a newcomer lands, reads, and finds feedback and sign-in without learning the editor: few choices, plain words, the feedback door and sign-in unmissable from the front page.
